@@ -1,0 +1,13 @@
+* Comparesoft Coding Challenge
+This repository is taken from an internal email notification that runs on AWS via the serverless framework. This service listens for messages from a number of SQS queues and SNS topics, then forwards them on as emails.
+
+Some users have reported that certain internal notifications are too noisy, and they would like to mute certain notifications.
+
+E.g. We get a notification when users perform certain events, however we are not interested in some users; so we would like to ignore emails about those events without ignoring all of those notification types.
+
+For this challenge just the mute code is included, you can assume that the email generation part is working as expected.
+
+Your task is to complete the implementation of the mute functionality, with tests, and apply any fixups to the code that you see fit.
+
+Tests can be run with ~make test~
+
